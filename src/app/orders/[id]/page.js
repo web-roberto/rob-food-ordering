@@ -62,7 +62,7 @@ export default function OrdersPage(){
         <div className="grid md:grid-cols-2 md:gap-16">
           <div>
             {order.cartProducts.map(product=>(
-               <CartProduct product={product} />
+               <CartProduct key={`${product._id}-${Math.ceil(Math.random()*100000)}`}  product={product} />
             ))}
             <div className="text-right py-2 text-gray-500">
               Delivery <span className="text-black font-bold inline-block w-8">${subtotal}</span> <br />
