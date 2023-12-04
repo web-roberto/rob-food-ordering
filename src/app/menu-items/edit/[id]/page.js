@@ -23,7 +23,7 @@ export default function EditMenuItem(){
         console.log('....menu-items..GET  UNO ..',item[0]._id)
         setMenuItem(item[0])
       })
-  }) }, [])
+  }) }, [id])
 
   async function handleFormSubmit(e,data){
     e.preventDefault();

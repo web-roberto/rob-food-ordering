@@ -34,7 +34,7 @@ export function AppProvider({children}){
         setCartProducts(cartProducts);
       }
     }
-  }, []);
+  }, [ls]);
 
   function clearCart(){
     setCartProducts([])

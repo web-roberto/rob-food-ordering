@@ -33,7 +33,7 @@ export default function OrdersPage(){
           })
         })
     }
-  },[])
+  },[id])
   let subtotal=0;
   if (order?.cartProducts){
     for (const product of order?.cartProducts){

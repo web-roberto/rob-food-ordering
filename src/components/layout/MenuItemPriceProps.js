@@ -39,7 +39,7 @@ function removeSize(indexToRemove){
       </button>
       <div className={isOpen?'block':'hidden'}>
         {props?.length>0 && props.map((size,index)=>(
-          <div className="flex gap-2 items-end">
+          <div key={size._id} className="flex gap-2 items-end">
             <div>
               <label>Name</label>
               <input type="text" placeholder="Size name" value={props[index].name} onChange={e=>editSize(e,index,'name')}/>
