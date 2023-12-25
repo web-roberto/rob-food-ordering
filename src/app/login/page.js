@@ -43,7 +43,7 @@ async function handleFormSubmit(e){
       <button type="submit" disabled={loginInProgress}>Login</button>
       <div className="my-4 text-center text-gray-500">
         or login with provider <br/>
-        <span className="text-sm">
+        <span className="text-xs">
         Admin demo user with google: <br />roberto.alonso.test@gmail.com  <br /> password:roberto.test
         </span>
        
