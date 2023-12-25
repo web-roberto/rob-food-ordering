@@ -43,7 +43,10 @@ async function handleFormSubmit(e){
       <button type="submit" disabled={loginInProgress}>Login</button>
       <div className="my-4 text-center text-gray-500">
         or login with provider <br/>
-        Admin demo user with google: roberto.alonso.test@gmail.com / password:roberto.test
+        <span className="text-sm">
+        Admin demo user with google: <br />roberto.alonso.test@gmail.com  <br /> password:roberto.test
+        </span>
+       
       </div>
         <button  type="button" onClick={()=> signIn('google',{callbackUrl:'/'})} className="flex gap-4 justify-center border-t pt-4">
           <Image src={'/google.png'} alt={''} width={24} height={24}/>
